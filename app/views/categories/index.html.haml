@@ -1,0 +1,9 @@
+Kategorie
+
+- @categories.each do |category|
+  %p
+    %b= link_to category.name , category
+    
+%hr   
+ 
+%p= link_to "Dodaj kategorię", new_category_path   

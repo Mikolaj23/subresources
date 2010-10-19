@@ -1,0 +1,4 @@
+- form_for [@movie.category,@movie] do |f|
+	%p= f.label :title, "Tytuł"
+	%p= f.text_field :title
+	%p= f.submit "Dodaj"

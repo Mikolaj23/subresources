@@ -1,0 +1,9 @@
+%h1= @category.name
+
+- @category.movies.each do |movie|
+  %p= link_to  movie.title, movie_url(movie)
+
+%hr
+
+%p= link_to "Dodaj film", new_category_movie_path(@category)
+%p= link_to "Wróć do kategorii", categories_url 
